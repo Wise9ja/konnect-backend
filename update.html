@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+<!--    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="images/konnect.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Konnect</title>
+</head>
+<body>
+<div class="container-fluid">
+
+<section class="padding-top-header" style="background-color: white;" >
+<div class="row">
+              <form action="index">
+<div class="col-12" style="position: fixed; top: 0px; padding-top: 20px; z-index: 100; right: 0px; margin-bottom: 50px;  background-color: white;">
+              
+              <a href="cart.html" style="position: relative;color: black" >
+                    <i class="fa fa-shopping-cart"style="margin-right:20px; margin-top: 25px"></i>
+                     <span id="cartx" style="position: absolute;right: 20px;top:-15px;font-size: 12px;background: red;width: 20px;height: 20px;border-radius: 30px;text-align: center;color: white"></span>
+                   </a>
+                    
+                    <a href="notifications.html" style="position: relative;color: black" >
+              <i class="fa fa-bell"style="margin-right:10px; margin-top: 25px"></i>
+                     <span style="position: absolute;right: 10px;top:-15px;font-size: 12px;background: red;width: 20px;height: 20px;border-radius: 30px;text-align: center;color: white">0</span>
+   
+</a>
+                  <div style="margin-top: -35px;">
+                    <input class="form-control float-right search_input" style="width: 80%; font-weight: bold; background-color: white;"  placeholder="Konnect: search for what to buy" name="product_search" required="" >
+                </div>
+                </form>
+            </div>
+        </div>
+        <br>
+
+
+<div>
+</div>
+</form>
+</div>
+</section>
+
+<section style="margin-top: 30px;">
+        <div class="alert alert-danger" id="toast" style="margin-top: 30px;"></div>
+       <!-- <div class="alert alert-success"></div>-->
+    <!-- <div class="row">
+        <div class="col-md-6 " >
+            <div class="card " style="width:100%">
+                <div class="card-body" style="padding: 50px">
+                    <form action="" method="post">
+
+                        <h3 class="card-title"><b>Login</b></h3>
+                        <div>
+                            <input  required class="form-control border_bottom" type="text" name="user" placeholder="Email Address or Phone Number">
+                        </div>
+                        <br>
+                        <div>
+                            <input required class="form-control border_bottom" name="password" type="password" placeholder="Password ">
+                        </div>
+                        <br>
+                         <div>
+                            <button class="btn btn-block btn-lg btn-warning bg-cyan">Login</button>
+                        </div>
+       <p><a href=""><small class="text-danger">Forgotten your password?</small></a> <br>
+        <span class="text-muted">Don't have an account? <a href="register.html" class="col-text font-weight-bold">Sign
+            Up</a> </p>
+  
+                    </form>
+                </div>
+
+
+            </div>
+        </div>--->
+        <div class="col-md-6 " >
+            <div class="card " style="width:100%">
+                <div class="card-body" style="padding: 50px">
+
+                    <input type="hidden" name="id" id="id">
+                   
+                        <h3 class="card-title"><b>UPDATE PROFILE</b></h3>
+                        <div class="row form_input">
+                            <div class="col-md-6">
+                                <input class="form-control border_bottom" name="fname" id="fname" required placeholder="First Name ">
+                            </div>
+
+                            <div class="col-md-6">
+                                <input class="form-control border_bottom" name="lname" id="lname" required placeholder="Last Name ">
+                            </div>
+
+                            <div class="col-md-6">
+                                <input class="form-control border_bottom" name="email" id="email" required placeholder="Email Address  ">
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control border_bottom" name="email" id="email2" required placeholder="Confirm Email Address  ">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel"  class="form-control border_bottom" required name="phone" id="phone" placeholder="Mobile Number ">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="tel"  class="form-control border_bottom" required name="phone2" id="phone2" placeholder="Confirm Mobile Number ">
+                            </div>
+                            <!--<div class="col-md-6">
+                                <input type="phone" name="whatsapp" id="whatsapp" required = "required"  class="form-control border_bottom" placeholder="WhatsApp Phone">
+                            </div>
+
+                            <div class="col-md-6">
+                                <select name="age" class="form-control" id="age"  required name="age">
+                                    <option value="">Age</option>
+                                    <option>15-25</option>
+                                    <option>26-33</option>
+                                    <option>34-40</option>
+                                    <option>41-50</option>
+                                    <option>15-25</option>
+                                    <option>50-Above</option>
+                                </select>
+
+                            </div>
+
+                            <div class="col-md-6">
+                                <select class="form-control" name="sex" id="sex" required="required">
+                                    <option value="">Gender</option>
+                                    <option value="Male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control border_bottom"  value="" name="ref_code" id="ref_code" placeholder="Referral Code">
+                            </div><br>-->
+
+                            <div class="col-md-6">
+                                <input class="form-control border_bottom" type="password" name="password" id="password" required placeholder="Password">
+                            </div>
+
+                            <div class="col-md-6">
+                                <input class="form-control border_bottom"  type="password" id="password2" required name="confirm_password" placeholder="Confirm Password">
+                            </div>
+                        </div>
+                        <input type="hidden" name="register">
+                        <div>
+                            <button id="but1" class="btn btn-block btn-lg btn-danger" onclick="register()">Sign Up</button>
+                             <button  id="but2" class="btn btn-block btn-lg btn-warning bg-cyan" style=" background:  #0000ee; color: white; display: none; dborder-radius: 30px; opacity: 0.5;">
+                              <span class="spinner-grow spinner-grow-sm"></span>
+                              <span class="spinner-grow spinner-grow-sm"></span>
+                              <span class="spinner-grow spinner-grow-sm"></span>
+                                </button>
+
+                        </div>
+
+
+                  
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+var konnect_user = localStorage.getItem("konnect_userx");
+
+var dataString='user='+konnect_user;
+$.ajax({
+type:"GET",
+url:"https://www.konnect.link/core/get_profile.php",
+data:dataString,
+jsonp:"callback",
+jsonpCallback:"Sverify",
+dataType:"jsonp",
+crossDomain:true,
+success: function(data){
+var id = data.id;
+var fname = data.fname;
+var lname = data.lname;
+var email = data.email;
+var phone = data.phone;
+
+
+document.getElementById("id").value = id;
+document.getElementById("fname").value = fname;
+document.getElementById("lname").value = lname;
+document.getElementById("email").value = email;
+document.getElementById("phone").value = phone;
+
+},
+beforeSend:function()
+{
+},
+error: function(jqXHR, textStatus, errorThrown)
+{
+//alert (errorThrown);
+    }
+
+
+});
+//});
+});
+
+</script>
+
+
+
+
+<script type="text/javascript">
+function register()
+{
+
+
+var id = document.getElementById("id");
+var fname = document.getElementById("fname").value;
+var lname = document.getElementById("lname").value;
+var email = document.getElementById("email").value;
+var email2 = document.getElementById("email2").value;
+var phone = document.getElementById("phone").value;
+var phone2 = document.getElementById("phone2").value;
+
+/*var age = document.getElementById("age").value;
+var sex = document.getElementById("sex").value;
+var ref_code = document.getElementById("ref_code").value; */
+
+var password = document.getElementById("password").value;
+var password2 = document.getElementById("password2").value;
+
+
+
+var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+var filter2 = /^([a-zA-Z0-9_\.\-])+\@+([gmail.com])+$/;
+var filter3 = /^([0-9]{10})+$/;
+var filter4 = /^([0-9]{11})+$/;
+var filter5 = /^([0-9]{4})+$/;
+
+
+if(fname == ""  || lname == "" || email == "" || email2 == "" || phone == "" ||  phone2 == "" || password == "" || password2 == "")
+{
+$('#toast').empty();
+$('#toast').show();
+$('#toast').append("Please fill all fields");
+return false;
+}
+
+if(!filter.test(email))
+{
+$('#toast').empty();
+$('#toast').show();
+$('#toast').append("Enter a Valid Email");
+return false;
+}
+
+if(!filter4.test(phone) )
+{
+$('#toast').empty();
+$('#toast').show();
+$('#toast').append("Enter Correct Phone Number");
+return false;
+}
+
+
+if(email !== email2)
+{
+$('#toast').empty();
+$('#toast').show();
+$('#toast').append("Emails Do Not Match");
+return false;
+}
+
+
+
+if(phone !== phone2)
+{
+$('#toast').empty();
+$('#toast').show();
+$('#toast').append("Mobile Phones do Not Match");
+return false;
+}
+
+
+if(password == "")
+{
+$('#toast').empty();
+$('#toast').show();
+$('#toast').append("Enter Your Password");
+//alert ("Enter a  Pin");
+return false;
+}
+
+
+if(password2 == "")
+{
+$('#toast').empty();
+$('#toast').show();
+$('#toast').append("Retype Your Password");
+return false;
+}
+
+
+if(password !== password2)
+{
+$('#toast').empty();
+$('#toast').show();
+$('#toast').append("Passwords do not match");
+return false;
+}
+
+   /* if (!terms.checked){
+      alert("Please accept terms and conditions");
+      return false;
+    } */
+
+
+
+var dataString='fname='+fname+'&lname='+lname+'&email='+email+'&phone='+phone+'&password='+password+'&id='+id;
+$.ajax({
+type:"GET",
+url:"https://konnect.link/core/update.php",
+data:dataString,
+jsonp:"callback",
+jsonpCallback:"Sverify",
+dataType:"jsonp",
+crossDomain:true,
+success: function(data){
+var success = data.success;
+//var name = fname;
+
+    localStorage.setItem("konnect_name", fname);
+    localStorage.setItem("konnect_user", email);
+    //localStorage.setItem("konnect_refcode", ref_code);
+
+     window.open('index.php', '_self', 'location=yes');
+
+},
+beforeSend:function()
+{
+$('#toast').empty();
+$('#but1').hide();
+$('#but2').show();
+
+},
+error: function(jqXHR, textStatus, errorThrown)
+{
+$('#toast').empty();
+$('#toast').show();
+$('#toast').append(errorThrown);
+$('#but2').hide();
+$('#but1').show();
+
+    }
+
+
+});
+}
+</script>
+
+
+
+
+
+
+<div class="footer" style="margin-top: 100px;">
+    <div class="container-fluid" style="width: 100%; position: fixed;  margin:auto; padding:auto; dheight: 50px; bottom: 0px; padding-top: 10px; padding-bottom: 5px;  margin-top: 50px;  background-color: white;">
+
+<table style="width: 100%" style="text-align: center; padding: auto; margin: auto; font-size: 12px;">
+<tr><td style="text-align: center; font-size: 12px; line-height: 20px;"><a href="dashboard.html" style="color: black; dfont-weight: bold; text-decoration: none;"><img src="img/cart.png" height="20"><br>SHOP</a></td><td style="text-align: center; font-size: 12px; line-height: 20px;"><a href="get_credit.html" style="color: black; dfont-weight: bold; text-decoration: none;"><img src="img/loan.jpg" height="20"><br>GET CREDIT</a></td><td style="text-align: center;font-size: 12px; line-height: 20px;"><a href="pay_bills.html" style="color: black;  text-decoration: none; dfont-weight: bold;"><img src="img/bills.jpg" height="20"><br>PAY BILLS</a></td><td style="text-align: center;font-size: 12px; line-height: 20px;"><a href="referral.html" style="color: black; text-decoration: none; dfont-weight: bold;"><img src="img/referal.png" height="20"><br>REFERRAL</a></td><td style="text-align: center;font-size: 12px; line-height: 20px;"><a href="profile.html" style="color: black; dfont-weight: bold; text-decoration: none;"> <img src="img/profile.png" height="20"><br>ACCOUNT </a></td></tr>
+</table>
+
+
+</div>
+</div>
+</div>
+</bR>
+</section>
+</div>
+</section>
+</div>
+</body>
+</html>
